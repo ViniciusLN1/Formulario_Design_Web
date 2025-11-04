@@ -1,17 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <form action="">
+
+    <fieldset class="fs1">
         <h1>Formulário Alunos UniAcademia</h1>
-        <p>Nome:</p><input type="text" name="nome">
-        <p>Email:</p><input type="email" name="email">
-        <p>Curso:</p><input type="text" name="curso">
-    </form>    
+        <h3>Dados Pessoais</h3>
+        <p>Nome:</p> <input type="text" name="Nome">
+        <p>Sobrenome</p> <input type="text" name="sobrenome">
+        <p>Data de Nascimento</p> <input type="date" name="data_nascimento">
+        <p>Email:</p> <input type="email" name="email">
+        <p>Telefone:</p> <input type="text" name="curso">
+        <p>Sexo</p> <select name="sexo" id="">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+    </fieldset>
+
+    <fieldset class="fs2">
+        <h3>Endereço:</h3>
+        <p>Rua:</p> <input type="text">
+        <p>Número:</p> <input type="text">
+        <p>Bairro:</p> <input type="text">
+        <p>Estado:</p> <input type="text">
+        <p>Cidade:</p> <input type="text">
+    </fieldset>
+
+    <fieldset class="fs3">
+        <h3>Preferências:</h3>
+        <p>Selecione os seus interesses:</p>
+        <input type="checkbox" name="interesse1" value="esportes">Jogos
+        <input type="checkbox" name="interesse1" value="esportes">Novela
+        <input type="checkbox" name="interesse1" value="esportes">Notícias
+        <input type="checkbox" name="interesse1" value="esportes">Filmes
+        <input type="checkbox" name="interesse1" value="esportes">Esportes
+        <input type="checkbox" name="interesse1" value="esportes">Música
+    </fieldset>
+
+    <fieldset class="fs4">
+        <h3>Curso e Período</h3>
+        <p>Curso:</p> <input type="text" name="curso">
+        <p>Período:</p> <input type="text" name="periodo">
+    </fieldset>
+
+    <fieldset class="fs5">
+        <h3>Rede Social</h3>
+        <p>Rede Social mais usada:</p> <input type="text" name="redesocial">
+    </fieldset>
+
+    <fieldset class="fs6">
+        <h3>Deixe a sua opinião:</h3> <textarea name="area_opniao" id=""></textarea>
+    </fieldset>
+
+    <button class="botao1">Limpar</button>
+    <button class="botao2">Reset</button>
+
 </body>
+
 </html>

@@ -1,4 +1,25 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     background-color: #1e90ff;
     color: white;
+}
+
+.fs1{
+
+    
+}
+
+.botao1{
+    block-size: 40px;
+    max-block-size: 40px;
+    min-block-size: 40px;
+    background-color: blueviolet;
+}
+
+.botao2{
+    block-size: 40px;
+    max-block-size: 40px;
+    min-block-size: 40px;
+    background-color: chocolate;
 }
