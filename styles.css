@@ -6,9 +6,64 @@ body {
 }
 
 .fs1{
-
-    
+    display: flex;
+    padding: 40px;
+    border-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    #background-color: white;
 }
+
+
+.fs2{
+
+    display: flex;
+    padding: 40px;
+    border-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.fs3{
+    display: flex;
+    padding: 40px;
+    border-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.fs4{
+    display: flex;
+    padding: 40px;
+    border-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.fs5{
+    display: flex;
+    padding: 40px;
+    border-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.fs6{
+    display: flex;
+    padding: 40px;
+    border-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
 
 .botao1{
     block-size: 40px;
