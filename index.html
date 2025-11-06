@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pr-BR">
 
 <head>
 
@@ -12,16 +12,17 @@
 </head>
 
 <body>
-
+<form id="meuFormulario">
     <fieldset class="fs1">
         <h1>Formulário Alunos UniAcademia</h1>
-        <h3>Dados Pessoais</h3>
-        <p>Nome:</p> <input type="text" name="Nome">
-        <p>Sobrenome</p> <input type="text" name="sobrenome">
-        <p>Data de Nascimento</p> <input type="date" name="data_nascimento">
-        <p>Email:</p> <input type="email" name="email">
-        <p>Telefone:</p> <input type="text" name="curso">
-        <p>Sexo</p> <select name="sexo" id="">
+        <h2>Dados Pessoais</h2>
+        <p>Nome:</p> <input type="text" name="nome" required>
+        <p>Sobrenome:</p> <input type="text" name="sobrenome"
+        required>
+        <p>Data de Nascimento:</p> <input type="date" name="data_nascimento" required>
+        <p>Email:</p> <input type="email" name="email" required>
+        <p>Telefone:</p> <input type="text" name="telefone" required>
+        <p>Sexo:</p> <select name="sexo" id="">
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
             <option value="outro">Outro</option>
@@ -29,43 +30,50 @@
     </fieldset>
 
     <fieldset class="fs2">
-        <h3>Endereço:</h3>
-        <p>Rua:</p> <input type="text">
-        <p>Número:</p> <input type="text">
-        <p>Bairro:</p> <input type="text">
-        <p>Estado:</p> <input type="text">
-        <p>Cidade:</p> <input type="text">
+        <h2>Endereço:</h2>
+        <p>Rua:</p> <input type="text" name="rua" required>
+        <p>Número:</p> <input type="number" name="numero" required>
+        <p>Bairro:</p> <input type="text" name="bairro" required>
+        <p>Estado:</p> <input type="text" name="estado" required>
+        <p>Cidade:</p> <input type="text" name="cidade" required>
     </fieldset>
 
     <fieldset class="fs3">
-        <h3>Preferências:</h3>
+        <h2>Preferências</h2>
         <p>Selecione os seus interesses:</p>
-        <input type="checkbox" name="interesse1" value="esportes">Jogos
-        <input type="checkbox" name="interesse1" value="esportes">Novela
-        <input type="checkbox" name="interesse1" value="esportes">Notícias
-        <input type="checkbox" name="interesse1" value="esportes">Filmes
-        <input type="checkbox" name="interesse1" value="esportes">Esportes
-        <input type="checkbox" name="interesse1" value="esportes">Música
+        <input type="checkbox" name="interesse" value="Jogos">Jogos
+        <input type="checkbox" name="interesse" value="Novela">Novela
+        <input type="checkbox" name="interesse" value="Notícias">Notícias
+        <input type="checkbox" name="interesse" value="Filmes">Filmes
+        <input type="checkbox" name="interesse" value="Esportes">Esportes
+        <input type="checkbox" name="interesse" value="Música">Música
     </fieldset>
 
     <fieldset class="fs4">
-        <h3>Curso e Período</h3>
-        <p>Curso:</p> <input type="text" name="curso">
-        <p>Período:</p> <input type="text" name="periodo">
+        <h2>Curso e Período</h2>
+        <p>Curso:</p> <input type="text" name="curso" required>
+        <p>Período:</p>
+        <input type="radio" name="periodo" value="1º"> 1º
+        <input type="radio" name="periodo" value="2º"> 2º
+        <input type="radio" name="periodo" value="3º"> 3º
+        <input type="radio" name="periodo" value="outro"> outro
+
     </fieldset>
 
     <fieldset class="fs5">
-        <h3>Rede Social</h3>
+        <h2>Rede Social</h2>
         <p>Rede Social mais usada:</p> <input type="text" name="redesocial">
     </fieldset>
 
     <fieldset class="fs6">
-        <h3>Deixe a sua opinião:</h3> <textarea name="area_opniao" id=""></textarea>
+        <h2>Deixe a sua opinião:</h2> <textarea name="area_opniao" id=""></textarea>
     </fieldset>
 
-    <button class="botao1">Limpar</button>
-    <button class="botao2">Enviar</button>
-
+    <div class="botoes">
+        <button type="reset" class="botao1">Limpar</button>
+        <button type="submit" class="botao2">Enviar</button>
+    </div>
+</form>
 </body>
 
 </html>
